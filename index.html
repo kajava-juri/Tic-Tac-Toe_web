@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <div id="playerPick">
+      <p>Who do you want to play as?</p>
+      <p>player 1 goes first</p>
+      <button style="font-size: 30px;" id="circle" onclick="tttStart('circle')">O</button>
+      <button style="font-size: 30px;" id="cross" onclick="tttStart('cross')">X</button>
+      <br>
+      <a href="gameResults/index.html">See the played games' results</a>
+    </div>
+    <div>
+      <p id="player1">player 1:</p>
+      <p id="player2">player 2:</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container" id="tttGrid" >
+      <div class="nr1" style="border-top: solid; border-right: solid; font-size: 50px;" onclick="theGame('c1')" id="g1"><span class="spann" id="c1"></span></div>
+      <div class="nr2" style="border-top: solid; border-right: solid; font-size: 50px;" onclick="theGame('c2')" id="g2"><span class="spann" id="c2"></span></div>
+      <div class="nr3" style="border-top: solid; font-size: 50px;" onclick="theGame('c3')" id="g3"><span class="spann" id="c3" ></span></div>
+      <div class="nr4" style="border-top: solid; border-right: solid; font-size: 50px;" onclick="theGame('c4')" id="g4"><span class="spann" id="c4"></span></div>
+      <div class="nr5" style="border-top: solid; border-right: solid; font-size: 50px;" onclick="theGame('c5')" id="g5"><span class="spann" id="c5"></span></div>
+      <div class="nr6" style="border-top: solid; font-size: 50px;" onclick="theGame('c6')" id="g6"><span class="spann" id="c6"></span></div>
+      <div class="nr7" style="border-right: solid; font-size: 50px;" onclick="theGame('c7')" id="g7"><span class="spann" id="c7"></span></div>
+      <div class="nr8" style="border-right: solid; font-size: 50px;" onclick="theGame('c8')" id="g8"><span class="spann" id="c8"></span></div>
+      <div class="nr9" style="font-size: 50px;" onclick="theGame('c9')" id="g9"><span class="spann" id="c9"></span></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="tttBtn"></div>
+
+    <script type="text/javascript" src="scripts/theGame.js"></script>
+    <script type="text/javascript" src="scripts/tttGame.js"></script>
+</body>
+</html>
