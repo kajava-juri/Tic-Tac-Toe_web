@@ -1,0 +1,71 @@
+.container {
+    display: grid;
+    grid-template-columns: 240px 240px 240px;
+    grid-template-rows: 240px 240px 240px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nr7 nr8 nr9"
+      "nr4 nr5 nr6"
+      "nr1 nr2 nr3";
+  }
+  
+  .nr1, .nr2, .nr3, .nr4, .nr5, .nr6, .nr7, .nr8, .nr9 {
+    font-size: 50px;
+  }
+
+  .nr1 { 
+    grid-area: nr1; 
+    position: relative;
+    text-align: center;
+    border-top: solid; border-right: solid;}
+  
+  .nr2 { grid-area: nr2; 
+    position: relative;
+    text-align: center;
+    border-top: solid; border-right: solid;}
+  
+  .nr3 { grid-area: nr3; 
+    position: relative;
+    text-align: center;
+    border-top: solid;}
+  
+  .nr4 { grid-area: nr4; 
+    position: relative;
+    text-align: center;
+    border-top: solid; border-right: solid;}
+  
+  .nr5 { grid-area: nr5; 
+    position: relative;
+    text-align: center;
+    border-top: solid; border-right: solid;}
+  
+  .nr6 { grid-area: nr6; 
+    position: relative;
+    text-align: center;
+    border-top: solid;}
+  
+  .nr7 { grid-area: nr7; 
+    position: relative;
+    text-align: center;
+    border-right: solid;}
+  
+  .nr8 { grid-area: nr8; 
+    position: relative;
+    text-align: center;
+    border-right: solid;}
+  
+  .nr9 { grid-area: nr9; 
+    position: relative;
+    text-align: center;}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    }
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #1a1a1a;
+    }
