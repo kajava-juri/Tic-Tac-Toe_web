@@ -1,1 +1,133 @@
+html {
+  font-size: 10px;
+}
 
+.container {
+  display: grid;
+  grid-template-columns: 240px 240px 240px;
+  grid-template-rows: 240px 240px 240px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nr7 nr8 nr9"
+    "nr4 nr5 nr6"
+    "nr1 nr2 nr3";
+}
+
+.nr1 { 
+  grid-area: nr1; 
+  position: relative;
+  text-align: center;}
+
+.nr2 { grid-area: nr2; 
+  position: relative;
+  text-align: center;}
+
+.nr3 { grid-area: nr3; 
+  position: relative;
+  text-align: center;}
+
+.nr4 { grid-area: nr4; 
+  position: relative;
+  text-align: center;}
+
+.nr5 { grid-area: nr5; 
+  position: relative;
+  text-align: center;}
+
+.nr6 { grid-area: nr6; 
+  position: relative;
+  text-align: center;}
+
+.nr7 { grid-area: nr7; 
+  position: relative;
+  text-align: center;}
+
+.nr8 { grid-area: nr8; 
+  position: relative;
+  text-align: center;}
+
+.nr9 { grid-area: nr9; 
+  position: relative;
+  text-align: center;}
+
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #33ff00;
+  font-size: 20px;
+}
+
+html {
+  background-color: #140d74;
+}
+
+body {
+  width: 1300px;
+  margin: 0 auto;
+  background-color: #3c9cc5;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+  counter-reset: section;
+}
+
+  
+  li.rgNumbers:before{
+    counter-increment: section;
+    content: counter(section)') \2022';
+  }
+  ul.listOfNumbers, ul.listOfNumbers2{
+    list-style-type: none;
+    counter-reset: section;
+  }
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #1a1a1a;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.one {
+  float: left;
+  position: relative;
+  left: 20%;
+  
+}
+
+.one > h1{
+  font-size: 80px;
+  color: #33ff00;
+}
+
+.one > span{
+  font-size: 20px;
+
+}
+
+.two {
+  position: relative;
+    left: -45px;
+    
+}
+
+.spann {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
